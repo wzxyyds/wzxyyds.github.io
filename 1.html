@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>我的第一个网站</title>
+        <style type="text/css">
+            *{
+                font-family: "楷体";
+            }
+            body{
+                text-align: center!important;
+            }
+            .w{
+                color:red;
+                text-align: center;
+            }
+            .w caption{
+                color:blue;
+                text-align: center;
+            }
+            table {margin: auto;}
+            .w thead{
+                color:blueviolet;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+                text-align: center;
+            }
+            .w tbody{
+                font-family: "楷体";
+                font-size: 40px;
+                font-weight: normal;
+                color:green;
+                text-align: center;
+            }
+            .w tfoot{
+                font-style: italic;
+                color: aqua;
+                text-align: center;
+            }
+            a:hover{
+                color:red;
+            }
+            .x label{
+                letter-spacing:1em;
+                font: bold italic 99px/1.5em "微软雅黑";
+                color:brown;
+            }
+            .x header{
+                letter-spacing:1em;
+                font: bold italic 20px/1.5em "微软雅黑";
+                color:yellow;
+            }
+            .z{
+                border: 10px solid greenyellow;
+                font: bold italic 20px/1.5em "宋体";
+                color:aquamarine;
+                text-align: left;
+                text-decoration:underline;
+            }
+            a{
+                letter-spacing:1em;
+                color:blue;
+            }
+            .low{
+                line-height: 2em;
+                font-style: italic;
+                color: blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <header><h1>我的第一个网站</h1></header>
+        <section class="w">
+            <header><h2>表格</h2></header>
+            <table border="1">
+                <caption>我的第一个表格
+                <thead>
+                    <tr>
+                        <th>NO.</th>
+                        <th>num1</th>
+                        <th>num2</th>
+                        <th>num3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>一</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>二</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>三</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                <tfoot>
+                    <tr>
+                        <td>sum</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>9</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section class="z">
+            <header><h2>ul与ol</h2></header>
+                <ul>
+                    <li>邱巨佬确实很卷啊啊啊
+                    <li>邱巨佬确实很卷啊啊啊啊啊啊啊啊啊
+                </ul>
+                <ol>
+                    <li>邱巨佬确实很卷啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+                    <li>邱巨佬确实很卷啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+                </ol>
+        </section>
+        <section class="x">
+            <header><h2>图片与链接</h2></header>
+            <label>邱巨佬的美照</label><br/>
+            <img src="https://gitee.com/wang-zixi/summer.git/1.jpg" alt="加载图片失败" title="邱巨佬的照片"><br/>
+            <a href="https://www.baidu.com/" target="_blank" title="没用的搜索引擎">没啥子用的搜索引擎</a>
+        </section>
+        <section class="low">
+            <header><h2>交互界面</h2></header>
+            <form method="post" action="save.txt">
+                <label for="username">用户名:</label>
+                <input type="text" name="username" placeholder="请输入用户名" value="">
+                <br/>
+                <label for="password"> 密&nbsp&nbsp&nbsp码:</label>
+                <input type="password" name="password" placeholder="请输入密码" value="">
+                <br/>
+                <label for="email"> 邮&nbsp&nbsp&nbsp箱:</label>
+                <input type="email" name="email" placeholder="请输入邮箱" value="">
+                <br/>
+                <label for="age">年&nbsp&nbsp&nbsp龄:</label>
+                <input type="number" name="age" placeholder="请输入你的年龄" value="">
+                <br/>
+                <label>邱巨佬卷不卷?</label>
+                <br/>
+                <input type="radio" value="1" name="qiu0"/>
+                <label>卷</label>
+                <input type="radio" value="2" name="qiu0"/>
+                <label>很卷</label>
+                <input type="radio" value="3" name="qiu0"/>
+                <label>非常卷</label>
+                <br/>
+                <label>邱巨佬是不是很强?</label>
+                <br/>
+                <input type="checkbox" value="1" name="qiu1"/>
+                <label>强</label>
+                <input type="checkbox" value="2" name="qiu1"/>
+                <label>很强</label>
+                <input type="checkbox" value="3" name="qiu1"/>
+                <label>非常强</label>
+                <br/>
+                <label>请选择你认为最正确的话:</label>
+                <select>
+                    <option value="4">邱巨佬大卷王</option>
+                    <option value="5">邱启航大卷王</option>
+                    <option value="6">邱巨佬是真的卷</option>
+                </select>
+                <br/>
+                <input type="reset" value="重置">
+                <input type="submit" value="确认">
+            </form>
+        </section>
+    </body>
+</html>
